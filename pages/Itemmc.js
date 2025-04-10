@@ -52,6 +52,9 @@ class ItemManager {
         await this.page.click(this.assignee)
 
         await this.page.click(this.createitem);
+        await this.page.waitForTimeout(5000);
+
+        await this.page.pause();
     }
 }
 
